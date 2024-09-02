@@ -15,7 +15,7 @@ void Precompute(){
                 ciur[i] = true;
          }
          ciur[0] = ciur[1] = false;
-         for(int i = 1; i * i <= SIZE; i++){
+         for(int i = 2; i * i <= SIZE; i++){
                     if(ciur[i]){
                         for(int j = i * i; j <= SIZE; j = j + i){
                                ciur[j] = false;
